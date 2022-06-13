@@ -115,7 +115,7 @@ func worker() error {
 	}
 	defer cleanup()
 
-	server, err := startServer(true)
+	server, err := startServer(true) //should register funcs
 	if err != nil {
 		return err
 	}
